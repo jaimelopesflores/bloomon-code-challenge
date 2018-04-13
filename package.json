@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Bloomon production manager",
   "main": "bin/index.js",
+  "engines" : { "node" : ">=8.10.0" },
   "bin": {
     "bloomon-cli": "./bin/index.js"
   },
