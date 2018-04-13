@@ -4,7 +4,7 @@
   "description": "Bloomon production manager",
   "main": "bin/index.js",
   "bin": {
-    "bloomon-cli": "index.js"
+    "bloomon-cli": "./bin/index.js"
   },
   "scripts": {
     "test": "tape tests/*.js"
