@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { init, manage } = require('../lib/manager');
+const { start } = require('../lib/manager');
 const [,, ...args] = process.argv;
 
 if (args.length !== 1) {
@@ -8,4 +8,4 @@ if (args.length !== 1) {
   return process.exit(1);
 }
 
-init(process.argv[2]);
+start(args[0]);
