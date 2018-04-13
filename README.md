@@ -18,9 +18,19 @@ node bin <input-file>
 
 ## Running as a command line tool
 
-To run as a command line, first link the project then run the **bloomon-cli**:
+To run as a command line tool, first link the project:
 ```bash
 npm link
+
+```
+
+Or install directly from GitHub as a command line tool:
+```bash
+npm i -g https://github.com/jaimelopesflores/bloomon-code-challenge.git
+```
+
+Finally run the **bloomon-cli**
+```bash
 bloomon-cli <input-file>
 ```
 
@@ -35,12 +45,6 @@ docker build -t bloomon .
 ```
 
 Then run the container:
-```bash
-docker run -v $(pwd):/var/input-files bloomon node bin /var/input-files/input-file-name.txt
-```
-
-or 
-
 ```bash
 docker run -v /path/to/input/files:/var/input-files bloomon node bin /var/input-files/input-file-name.txt
 ```
