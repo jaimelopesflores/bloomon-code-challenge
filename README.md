@@ -13,7 +13,15 @@ yarn
 
 To run use the command below:
 ```bash
-node bin <input-file-path>
+node bin <input-file>
+```
+
+## Running as a command line tool
+
+To run as a command line, first link the project then run the **bloomon-cli**:
+```bash
+npm link
+bloomon-cli <input-file>
 ```
 
 The **input-file** must follows the model described in the code-challenge [document](https://drive.google.com/file/d/1iHIzsBid0BU-ns7tU47kBlrKEiBrpnsR/view).
