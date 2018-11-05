@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Bloomon production manager",
   "main": "bin/index.js",
-  "engines" : { "node" : ">=8.10.0" },
+  "engines": {
+    "node": ">=8.10.0"
+  },
   "bin": {
     "bloomon-cli": "./bin/index.js"
   },
@@ -25,7 +27,10 @@
     "url": "https://github.com/jaimelopesflores/bloomon-code-challenge/issues"
   },
   "homepage": "https://github.com/jaimelopesflores/bloomon-code-challenge#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1"
+  },
   "devDependencies": {
     "tape": "^4.9.0"
   }
