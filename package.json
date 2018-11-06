@@ -10,6 +10,7 @@
     "bloomon-cli": "./bin/index.js"
   },
   "scripts": {
+    "start": "node bin",
     "test": "tape tests/*.js"
   },
   "repository": {
