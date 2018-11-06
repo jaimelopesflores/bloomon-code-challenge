@@ -21,7 +21,7 @@ npm start
 If you want to run in debug mode (more verbose logs), add the environment variable _DEBUG_ as follows:
 ```bash
 DEBUG=true node bin
-# or 
+# or
 DEBUG=true npm start
 ```
 
@@ -32,7 +32,7 @@ MAX_STORAGE=10 node bin
 # or
 MAX_STORAGE=10 npm start
 ```
-    
+
 ## Running as a command line tool
 
 To run as a command line tool, first link the project:
@@ -42,7 +42,7 @@ npm link
 
 Or install directly from GitHub as a command line tool:
 ```bash
-npm i -g https://github.com/jaimelopesflores/bloomon-code-challenge.git
+npm i -g https://github.com/rockerroller/bloomon-code-challenge.git
 ```
 
 Finally run the **bloomon-cli**
