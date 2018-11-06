@@ -73,3 +73,19 @@ npm test
 ```
 
 PS: Not all necessary tests were implemented in this code-challenge because the purpose is just for prove the concepts.
+
+## PS Extra Task
+
+This code is considering first the storage of a _flower_, and then the build of a _bouquet_.
+In that case, when the storage is in its limit and a new _flower_ is added, even if that _flower_ can build a new _bouquet_ the cli will crash. The cause is because the _flower_ first need to be stored, and only then a _bouquet_ can be built. For example.
+
+If we input the following command sequence:
+```bash
+MAX_STORAGE=1 bloomon-cli
+AS1a
+
+aL
+aS # crash! exited with 1
+```
+
+So, event this new _flower_ making possible the bouquet build, the application will crash because (again), first a _flower_ have to be stored, so then a _bouquet_ can be made.
