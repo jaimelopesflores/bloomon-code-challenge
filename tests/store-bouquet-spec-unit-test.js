@@ -1,7 +1,7 @@
 const test = require('tape');
-const { parse } = require('../lib/design-spec');
+const parse = require('../lib/parser/bouquet-spec');
 
-test('should parse a design specification', (assert) => {
+test('should parse a bouquet spec', (assert) => {
 
   let bouquetSpec = parse('AL10r5t8d');
 

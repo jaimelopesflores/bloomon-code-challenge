@@ -1,11 +1,11 @@
 const test = require('tape');
-const { get, store } = require('../lib/bouquet');
+const { get, add } = require('../lib/store/flower');
 
-test('should store a flower', (assert) => {
+test('should add a flower', (assert) => {
 
-  store('dL');
-  store('dL');
-  store('dL');
+  add('dL');
+  add('dL');
+  add('dL');
 
   const qtt = get('dL');
 
@@ -16,8 +16,8 @@ test('should store a flower', (assert) => {
 
 test('should ignore due to wrong name', (assert) => {
 
-  store('jL');
-  store('JL');
+  add('jL');
+  add('JL');
 
   const qtt = get('jL');
 
@@ -28,10 +28,10 @@ test('should ignore due to wrong name', (assert) => {
 
 test('should ignore due to wrong size', (assert) => {
 
-  store('pS');
-  store('ps');
-  store('pX');
-  store('px');
+  add('pS');
+  add('ps');
+  add('pX');
+  add('px');
 
   const qtt = get('pS');
 
